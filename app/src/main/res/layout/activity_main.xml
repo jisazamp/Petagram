@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,25 +10,30 @@
     android:paddingRight="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/texto_titulo" />
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
 
-    <Button
-        android:id="@+id/btnMiBoton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvTitulo"
-        android:text="@string/texto_boton_click"
-        android:theme="@style/MiBotonRaised"/>
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_titulo" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_star"
-        android:layout_below="@id/btnMiBoton"
-        android:id="@+id/fabMiFab"/>
+        <Button
+            android:id="@+id/btnMiBoton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitulo"
+            android:text="@string/texto_boton_click"
+            android:theme="@style/MiBotonRaised"/>
 
-</RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            android:layout_below="@id/btnMiBoton"
+            android:id="@+id/fabMiFab"/>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
