@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiyTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_height"
+        android:layout_margin="@dimen/input_margin"
+        app:errorEnabled="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiNombre"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_username"
+                android:inputType="textPersonName"
+                android:maxLength="21"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiFechaNacimiento"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tiNombre"
+                android:hint="@string/form_birthdate"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiTelefono"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tiFechaNacimiento"
+                android:hint="@string/form_phone"
+                android:inputType="phone" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiEMail"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tiTelefono"
+                android:hint="@string/form_email"
+                android:inputType="textEmailAddress" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiDescripcion"
+                android:layout_width="@dimen/input_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tiEMail"
+                android:hint="@string/form_descripcion"
+                android:inputType="textMultiLine" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnMiBoton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/input_margin"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/tiDescripcion"
+            android:text="@string/texto_boton_click"
+            android:theme="@style/MiBotonRaised"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

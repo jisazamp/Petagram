@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="input_height">350dp</dimen>
+    <dimen name="input_width">300dp</dimen>
+    <dimen name="input_margin">15dp</dimen>
+    <dimen name="btn_width">15dp</dimen>
+</resources>

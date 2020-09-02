@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aplicación Semana 2</string>
+    <string name="form_username">Nombre completo</string>
+    <string name="form_birthdate">Fecha de nacimiento</string>
+    <string name="form_phone">Teléfono</string>
+    <string name="form_email">Email</string>
+    <string name="form_descripcion">Descripción</string>
+    <string name="texto_boton_click">Registrar</string>
+</resources>
