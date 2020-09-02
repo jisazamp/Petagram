@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CiclodeVidaActivity</string>
+    <string name="oncreate">OnCreate</string>
+    <string name="onstart">OnStart</string>
+    <string name="onresume">OnResume</string>
+    <string name="onrestart">OnRestart</string>
+    <string name="onpause">OnPause</string>
+    <string name="onstop">OnStop</string>
+    <string name="ondsetroy">OnDestroy</string>
+</resources>
