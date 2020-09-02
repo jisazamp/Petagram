@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -53,5 +54,14 @@ public class DetalleContacto extends AppCompatActivity {
         emailIntent.putExtra(Intent.EXTRA_EMAIL, email);
         emailIntent.setType("message/rfc822");
         startActivity(Intent.createChooser(emailIntent, "Email "));
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent intent = new Intent(DetalleContacto.this, MainActivity.class);
+            startActivity(intent);
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

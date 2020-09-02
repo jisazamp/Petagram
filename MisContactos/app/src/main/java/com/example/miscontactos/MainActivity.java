@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(getResources().getString(R.string.ptelefono), contactos.get(i).getTelefono());
                 intent.putExtra(getResources().getString(R.string.pemail), contactos.get(i).getEmail());
                 startActivity(intent);
+                finish(); // finaliza actividad anterior
+                // y solo la otra actividad estara cargada en la pila
             }
         });
     }
