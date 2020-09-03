@@ -4,4 +4,6 @@
     <dimen name="input_width">300dp</dimen>
     <dimen name="input_margin">15dp</dimen>
     <dimen name="btn_width">15dp</dimen>
+    <dimen name="text_size">25dp</dimen>
+    <dimen name="text_body">20dp</dimen>
 </resources>

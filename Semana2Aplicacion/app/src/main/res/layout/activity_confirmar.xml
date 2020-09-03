@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiyTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_height"
+        android:layout_margin="@dimen/input_margin"
+        app:errorEnabled="true">
+
+
+        <TextView
+            android:id="@+id/tvConfirmarDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"
+            android:text="Confirmar Datos"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_body"/>
+
+            <TextView
+                android:id="@+id/tvFechaNacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNombre"
+                android:text="Fecha nacimiento: "
+                android:textSize="@dimen/text_body"/>
+
+            <TextView
+                android:id="@+id/tvTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFechaNacimiento"
+                android:text="Tel: "
+                android:textSize="@dimen/text_body"/>
+
+            <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTelefono"
+            android:text="Email: "
+            android:textSize="@dimen/text_body"/>
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:text="Descripción: "
+                android:textSize="@dimen/text_body"/>
+            
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/input_margin"
+            android:layout_below="@+id/tiDescripcion"
+            android:text="@string/texto_boton_editar"
+            android:theme="@style/MiBotonRaised"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

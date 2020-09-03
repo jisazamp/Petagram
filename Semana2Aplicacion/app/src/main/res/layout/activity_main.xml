@@ -18,7 +18,6 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tiNombre"
                 android:layout_width="@dimen/input_width"
@@ -46,7 +45,7 @@
                 android:inputType="phone" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tiEMail"
+                android:id="@+id/tiEmail"
                 android:layout_width="@dimen/input_width"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tiTelefono"
@@ -57,22 +56,21 @@
                 android:id="@+id/tiDescripcion"
                 android:layout_width="@dimen/input_width"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tiEMail"
+                android:layout_below="@+id/tiEmail"
                 android:hint="@string/form_descripcion"
                 android:inputType="textMultiLine" />
         </RelativeLayout>
-
 
         <Button
             android:id="@+id/btnMiBoton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/input_margin"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/input_margin"
             android:layout_below="@+id/tiDescripcion"
             android:text="@string/texto_boton_click"
+            android:textSize="@dimen/text_body"
             android:theme="@style/MiBotonRaised"/>
-
     </com.google.android.material.textfield.TextInputLayout>
 
 </RelativeLayout>

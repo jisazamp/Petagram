@@ -5,5 +5,11 @@
     <string name="form_phone">Teléfono</string>
     <string name="form_email">Email</string>
     <string name="form_descripcion">Descripción</string>
-    <string name="texto_boton_click">Registrar</string>
+    <string name="texto_boton_click">Siguiente</string>
+    <string name="texto_boton_editar">Editar Datos</string>
+    <string name="pnombre">Nombre</string>
+    <string name="pfechanacimiento">Fecha nacimiento</string>
+    <string name="ptelefono">Telefono</string>
+    <string name="pemail">Email</string>
+    <string name="pdescripcion">Descripcion</string>
 </resources>
